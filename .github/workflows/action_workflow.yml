@@ -26,10 +26,3 @@ jobs:
       run: |
         export PECHA_API_KEY=${{ secrets.PECHA_API_KEY }}  # Explicitly export it
         python .github/workflows/scripts.py
-    - name: Push the Changes
-      run: |
-        git config user.name ta4tsering
-        git config user.email ta3tsering@gmail.com
-        git add .
-        git commit -m "added updated serialized json"
-        git push
